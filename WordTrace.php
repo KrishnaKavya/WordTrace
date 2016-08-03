@@ -19,6 +19,9 @@
 
 	<!--CSS Style Sheet-->
 	<link rel="stylesheet" type="text/css" href="style/WordTraceStyle.css">
+
+	<!--script file-->
+	<script src="js/script.js"></script>
 </head>
 
 <body>
@@ -39,10 +42,10 @@
 <div class="col-sm-6 col-md-6 col-lg-6">
 <p id="poem">
 
-<span>Black</span> A, <span>white</span> E, <span>red</span> I, <span>green</span> U, <span>blue</span> O - <span>vowels</span>,<br>		
+<span onmouseenter="">Black</span> A, <span>white</span> E, <span>red</span> I, <span>green</span> U, <span>blue</span> O - <span>vowels</span>,<br>		
 <span>Some</span> <span>day</span> I will <span>open</span> your <span>silent</span> <span>pregnancies</span>:<br>
 A, <span>black</span> <span>belt</span>, <span>hairy</span> with <span>burst</span> <span>flies</span>,<br>
-Bumbling and buzzing over stinking cruelties,<br>
+<span>Bumbling</span> and buzzing over stinking cruelties,<br>
 <br>
 Pits of night; E, candour of sand pavilions,<br>
 High glacial spears, white kings, trembling Queen Anne's lace;<br>
