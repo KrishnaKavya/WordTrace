@@ -18,12 +18,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!--CSS Style Sheet-->
-	<link rel="stylesheet" type="text/css" href="style/WordTraceStyle.css">
+	<link rel="stylesheet" type="text/css" href="style/FormPageStyle.css">
 
 </head>
 <body>
 <!--Main Div-->
 <div class="container-fluid">
+<div>
 <!--Free Dictionary link-->
 <div class="row">
 	
@@ -36,18 +37,29 @@
 <li>
 Definitions
 	<ul>
-	<li>Origins <input type="text" name="origins"></li> 
-	<li>Past    <input type="text" name="Past">  </li>	
-	<li>Present <input type="text" name="Present"> </li> 
+		<li>Origins &nbsp;&nbsp; 
+			<div class="origin_inputs_wrap">
+				<input type="text" name="origins[]" class="input">
+				<button class="add_field_button">+</button>
+			</div>
+		</li> 
+		
+	<li>Past &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Past" class="input">  </li>	
+	<li>Present &nbsp;&nbsp;<input type="text" name="Present" class="input"> </li> 
 	</ul>
 </li>
 <li>
-Associations <input type="text" name="Associations">
+Associations &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Associations" class="input">
 </li>	
 <li>
-Connections <input type="text" name="Connections">
+Connections &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Connections" class="input">
 </li>
 </ol>
+</div>
+<!--Done Button-->
+<div class="row">
+<input type="button" name="Done" value="Done">
+</div>
 </div>
 </div>
 
