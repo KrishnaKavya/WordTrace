@@ -40,19 +40,29 @@
 <li>
 Definitions
 	<ul>
-		<li>Origins &nbsp;&nbsp; 
-			<div class="input_fields_wrap">
-				<input type="text" name="mytext[]" class="input">
-				<button class="add_field_button">+</button>
+		<li>Origins
+			<div id="origins_wrap">
+				<input type="text" name="origins[]" class="input">
+				<button class="add_field_button" id="Add_Origins"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
 			</div>
 		</li> 
 
-	<li>Past &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Past" class="input">  </li>	
+	<li>Past
+		<div id="Past_wrap">
+		<input type="text" name="Past[]" class="input">
+		<button class="add_field_button" id="Add_Past"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
+		</div>
+	</li>	
+	
+
+
 	<li>Present &nbsp;&nbsp;<input type="text" name="Present" class="input"> </li> 
 	</ul>
 </li>
 <li>
-Associations &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Associations" class="input">
+Associations &nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="text" name="Associations" class="input">
 </li>	
 <li>
 Connections &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Connections" class="input">

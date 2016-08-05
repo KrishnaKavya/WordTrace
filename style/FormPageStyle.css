@@ -2,7 +2,12 @@
 	border-radius: 25px;
 	border: solid 2px;
 	padding-left: 25px;
+	margin-bottom: 10px;
 }
 li{
 	padding-bottom: 10px;
+}
+
+button{
+	background:white;
 }
