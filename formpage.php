@@ -20,6 +20,9 @@
 	<!--CSS Style Sheet-->
 	<link rel="stylesheet" type="text/css" href="style/FormPageStyle.css">
 
+	<!--script File-->
+	<script src="js/FormScript.js"></script>
+
 </head>
 <body>
 <!--Main Div-->
@@ -38,12 +41,12 @@
 Definitions
 	<ul>
 		<li>Origins &nbsp;&nbsp; 
-			<div class="origin_inputs_wrap">
-				<input type="text" name="origins[]" class="input">
+			<div class="input_fields_wrap">
+				<input type="text" name="mytext[]" class="input">
 				<button class="add_field_button">+</button>
 			</div>
 		</li> 
-		
+
 	<li>Past &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Past" class="input">  </li>	
 	<li>Present &nbsp;&nbsp;<input type="text" name="Present" class="input"> </li> 
 	</ul>
