@@ -32,15 +32,20 @@
 <!--Form-->
 <div class="row">
 <!--Change to a, b,c and add an inner bullet for Origins-->
-<ol>
+<ol type="a">
 <li>
 Definitions
+	<ul>
+	<li>Origins <input type="text" name="origins"></li> 
+	<li>Past    <input type="text" name="Past">  </li>	
+	<li>Present <input type="text" name="Present"> </li> 
+	</ul>
 </li>
 <li>
-Associations
+Associations <input type="text" name="Associations">
 </li>	
 <li>
-Connections
+Connections <input type="text" name="Connections">
 </li>
 </ol>
 </div>
