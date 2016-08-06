@@ -37,8 +37,7 @@
 <div class="row">
 <!--Change to a, b,c and add an inner bullet for Origins-->
 <ol type="a">
-<li>
-Definitions
+<li>Definitions
 	<ul>
 		<li>Origins
 			<div id="origins_wrap">
@@ -47,25 +46,34 @@ Definitions
 			</div>
 		</li> 
 
-	<li>Past
-		<div id="Past_wrap">
-		<input type="text" name="Past[]" class="input">
-		<button class="add_field_button" id="Add_Past"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
-		</div>
-	</li>	
+		<li>Past
+			<div id="Past_wrap">
+			<input type="text" name="Past[]" class="input">
+			<button class="add_field_button" id="Add_Past"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
+			</div>
+		</li>	
 	
 
 
-	<li>Present &nbsp;&nbsp;<input type="text" name="Present" class="input"> </li> 
+		<li>Present
+			<div id="Present_wrap">
+			<input type="text" name="Present[]" class="input"> 
+			<button class="add_field_button" id="Add_Present"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
+			</div>
+		</li> 
 	</ul>
 </li>
-<li>
-Associations &nbsp;&nbsp;&nbsp;&nbsp;
-
-<input type="text" name="Associations" class="input">
+<li>Associations
+	<div id="Associations_wrap">
+	<input type="text" name="Associations[]" class="input">
+	<button class="add_field_button" id="Add_Associations"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
+	</div>
 </li>	
-<li>
-Connections &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Connections" class="input">
+<li>Connections 
+	<div id="Connections_wrap">
+	<input type="text" name="Connections[]" class="input">
+	<button class="add_field_button" id="Add_Connections"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
+	</div>
 </li>
 </ol>
 </div>

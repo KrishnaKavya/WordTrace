@@ -25,8 +25,57 @@ $(document).ready(function() {
         }
 
      });
-     
+
       $('#Past_wrap').on("click",".remove_field", function(e){ //user click on remove text
         e.preventDefault(); $(this).parent('div').remove(); past_count--;
     });
+
+
+    //Present
+    var Present_count=1;
+     $('#Add_Present').click(function(e){ 
+         e.preventDefault();
+        if(Present_count < max_fields){ //max input box allowed
+            Present_count++; //text box increment
+            $('#Present_wrap').append('<div><input type="text" name="Present[]" class="input"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+        }
+
+     });
+
+      $('#Present_wrap').on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); Present_count--;
+    });
+
+
+    //Associations
+    var Associations_count=1;
+         $('#Add_Associations').click(function(e){ 
+         e.preventDefault();
+        if(Associations_count < max_fields){ //max input box allowed
+            Associations_count++; //text box increment
+            $('#Associations_wrap').append('<div><input type="text" name="Associations[]" class="input"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+        }
+
+     });
+
+      $('#Associations_wrap').on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); Associations_count--;
+    });
+
+
+    //Connections
+    var Connections_count=1;
+         $('#Add_Connections').click(function(e){ 
+         e.preventDefault();
+        if(Connections_count < max_fields){ //max input box allowed
+            Connections_count++; //text box increment
+            $('#Connections_wrap').append('<div><input type="text" name="Connections[]" class="input"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+        }
+
+     });
+
+      $('#Connections_wrap').on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); Connections_count--;
+    });
+
 });
