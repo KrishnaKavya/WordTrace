@@ -5,6 +5,8 @@
 
 	<!--Jquery Library-->
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
 	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -29,7 +31,7 @@
 <div class="container-fluid">
 <div>
 <!--Free Dictionary link-->
-<div class="row">
+<div id="siteloader" class="row">
 	
 </div>
 

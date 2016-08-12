@@ -1,4 +1,13 @@
 $(document).ready(function() {
+
+
+    $( "#siteloader" ).load( "http://www.google.com", function() {
+             alert( "Load was performed." );
+        });
+
+    jQuery("#contain").load("https://www.google.com/");
+
+    //Input Fields Start
      var max_fields      = 5; //maximum input boxes allowed
     
     //Origins
@@ -77,5 +86,9 @@ $(document).ready(function() {
       $('#Connections_wrap').on("click",".remove_field", function(e){ //user click on remove text
         e.preventDefault(); $(this).parent('div').remove(); Connections_count--;
     });
+
+    //Input fields end.
+
+    
 
 });
