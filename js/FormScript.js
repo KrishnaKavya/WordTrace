@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
 
-    $( "#siteloader" ).load( "http://www.google.com", function() {
-             alert( "Load was performed." );
-        });
+    //$( "#siteloader" ).load( "testing.html", function() {
+      //  });
 
-    jQuery("#contain").load("https://www.google.com/");
+        $(function(){
+            $('#siteloader').html('<object id="webloader" data="http://www.thefreedictionary.com/black"/>');
+        });
 
     //Input Fields Start
      var max_fields      = 5; //maximum input boxes allowed

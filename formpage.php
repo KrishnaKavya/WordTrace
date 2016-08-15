@@ -31,10 +31,9 @@
 <div class="container-fluid">
 <div>
 <!--Free Dictionary link-->
-<div id="siteloader" class="row">
+<div id="siteloader" class="row" width="500px" height="500px">
 	
 </div>
-<iframe src="http://www.google.com">google</iframe>
 
 <!--Form-->
 <div class="row">
