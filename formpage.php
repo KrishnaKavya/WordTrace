@@ -33,6 +33,7 @@
 	
 </div>
 
+<form method="POST">
 <!--Form-->
 <div class="row">
 <!--Change to a, b,c and add an inner bullet for Origins-->
@@ -76,11 +77,18 @@
 	</div>
 </li>
 </ol>
-</div>
 <!--Done Button-->
 <div class="row">
-<input type="button" name="Done" value="Done">
+<input type="submit" name="Done" value="Done">
 </div>
+</div>
+</form>
+<?php
+
+if(isset($_POST['Done'])){
+	echo $_POST["origins"][0]; 
+}
+?>
 </div>
 </div>
 

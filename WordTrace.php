@@ -1,3 +1,34 @@
+<!--Session variables-->
+<!--
+The sessions contains the userID. A unique Table is created in the database with the login information ( Example: KrishnaWordTrace.)
+-->
+<?php
+require_once('mysqli_connect.php'); 	//Including the 
+session_start();
+$user_login="Krishna";
+$_SESSION['user_login']= $user_login;
+$table_name=$user_login."_WordTrace";
+$_SESSION['table_name']=$table_name;
+$databaseName="wordtrace";
+	
+
+	//checking if the Table exits. 
+	$checktable= "SHOW TABLES FROM `$databaseName` LIKE '$table_name'"; //zero rows = not exist
+	$result =@mysqli_query($dbc, $checktable);
+	$num_rows =@mysqli_num_rows($result);
+	
+	if(!$num_rows){
+	//Creation of the Table 
+	 $createTable="CREATE TABLE `wordtrace`.`$table_name` ( `Tile_ID` INT NOT NULL , `Text_File` VARCHAR(1000) NULL , `Image` VARCHAR(30) NULL , `Video` VARCHAR(30) NULL , `Audio` VARCHAR(30) NULL , PRIMARY KEY (`Tile_ID`));";
+
+		 $createPoemSquare = @mysqli_query($dbc, $createTable);
+		 if($createPoemSquare){
+		 	echo "new table created";
+		 }
+	}
+	
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
