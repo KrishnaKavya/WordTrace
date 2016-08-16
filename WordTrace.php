@@ -39,7 +39,7 @@
 <!--Row 2-->
 <div class="row">
 <!--First Column-->
-<div class="col-sm-6 col-md-6 col-lg-6">
+<div class="col-sm-6 col-md-6 col-lg-6" >
 <p id="poem">
 
 <span onmouseenter="">Black</span> A, <span>white</span> E, <span>red</span> I, <span>green</span> U, <span>blue</span> O - <span>vowels</span>,<br>		
@@ -65,9 +65,9 @@ O&#46;&#46;&#46;Omega&#46;&#46;&#46;the violet light of His Eyes!<br>
 </div>
 
 <!--Second column-->
-<div class="col-sm-6 col-md-6 col-lg-6" id="Phase Box">
+<div class="col-sm-6 col-md-6 col-lg-6" id="Phase Box" >
 <!---->	
-<div class="row">
+<div class="row" >
 </div>
 <div class="row">
 </div>
