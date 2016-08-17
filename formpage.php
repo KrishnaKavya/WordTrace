@@ -1,3 +1,8 @@
+<?php
+require_once('mysqli_connect.php'); 	//Including the database connection and establishing connection to the database. 
+session_start();						//Session start.
+$tablename=$_SESSION['table_name'];
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -90,13 +95,13 @@
 <?php
 if(isset($_POST["Done"])){
     $origins = implode(", ", $_POST["origins"]);
- 	echo $_POST["present"];
+ 	$past = implode(", ", $_POST["past"]);
+ 	$present=implode(",", $_POST["present"]);
+ 	$associations=implode(",", $_POST["associations"]);
+ 	$connections=implode(",", $_POST["connections"]);
 
-    if(strlen($origins)==0){
-    	echo "origin is empty";
-    }else{
-    	echo $origins;
-    }
+ 	$insertquery= "INSERT INTO `$tablename` (`word`, `Origin`, `past`, `present`, `associations`, `connections`) VALUES ('black', '$origins', '$past', '$present', '$associations', '$connections');";
+ 	$insertresult =@mysqli_query($dbc, $insertquery);
 }
 ?>
 </div>

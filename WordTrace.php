@@ -5,9 +5,9 @@ The sessions contains the userID. A unique Table is created in the database with
 <?php
 require_once('mysqli_connect.php'); 	//Including the database connection and establishing connection to the database. 
 session_start();						//Session start.
-$user_login="Krishna";						
+$user_login="krishna";						
 $_SESSION['user_login']= $user_login;	//Adding user login id to the session variables
-$table_name=$user_login."_WordTrace";	//The table name of the word trace of the user. 
+$table_name=$user_login."_wordtrace";	//The table name of the word trace of the user. 
 $_SESSION['table_name']=$table_name;	/*Adding the table name to the session variable. This session variable is used while storing the information 											to the database */
 $databaseName="wordtrace";
 	
