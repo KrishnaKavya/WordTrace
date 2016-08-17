@@ -4,14 +4,17 @@
 	<title>Form</title>
 
 	<!--Jquery Library-->
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js">
+	</script>
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"/>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+	</script>
 	
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 	<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">	
+	</script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,7 +22,8 @@
 	<link rel="stylesheet" type="text/css" href="style/FormPageStyle.css">
 
 	<!--script File-->
-	<script src="js/FormScript.js"></script>
+	<script src="js/FormScript.js">	
+	</script>
 
 </head>
 <body>
@@ -27,7 +31,7 @@
 <div class="container-fluid">
 <div>
 <!--Free Dictionary link-->
-<div id="siteloader" class="row" width="500px" height="500px">
+<div id="siteloader" class="row">
 	
 </div>
 
@@ -41,14 +45,15 @@
 		<li>Origins
 			<div id="origins_wrap">
 				<input type="text" name="origins[]" class="input">
-				<button class="add_field_button" id="Add_Origins"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
+				<button class="add_field_button" id="Add_Origins"><img src="images/addIcon.jpeg" height="20" width="20" alt="add button"></button>
 			</div>
 		</li> 
 
 		<li>Past
+			
 			<div id="Past_wrap">
 			<input type="text" name="past[]" class="input">
-			<button class="add_field_button" id="Add_Past"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
+			<button class="add_field_button" id="Add_Past"><img src="images/addIcon.jpeg" height="20" width="20" alt="add button"></button>
 			</div>
 		</li>	
 	
@@ -57,7 +62,7 @@
 		<li>Present
 			<div id="Present_wrap">
 			<input type="text" name="present[]" class="input"> 
-			<button class="add_field_button" id="Add_Present"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
+			<button class="add_field_button" id="Add_Present"><img src="images/addIcon.jpeg" height="20" width="20" alt="add button"></button>
 			</div>
 		</li> 
 	</ul>
@@ -65,19 +70,19 @@
 <li>Associations
 	<div id="Associations_wrap">
 	<input type="text" name="associations[]" class="input">
-	<button class="add_field_button" id="Add_Associations"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
+	<button class="add_field_button" id="Add_Associations"><img src="images/addIcon.jpeg" height="20" width="20" alt="add button"></button>
 	</div>
 </li>	
 <li>Connections 
 	<div id="Connections_wrap">
 	<input type="text" name="connections[]" class="input">
-	<button class="add_field_button" id="Add_Connections"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
+	<button class="add_field_button" id="Add_Connections"><img src="images/addIcon.jpeg" height="20" width="20" alt="add button"></button>
 	</div>
 </li>
 </ol>
 <!--Done Button-->
 <div class="row">
-<input type="submit" name="Done" value="Done">
+<input type="submit" name="Done" value="Done" class="submit">
 </div>
 </div>
 </form>
@@ -85,7 +90,7 @@
 <?php
 if(isset($_POST["Done"])){
     $origins = implode(", ", $_POST["origins"]);
- 	echo $_POST["past"];
+ 	echo $_POST["present"];
 
     if(strlen($origins)==0){
     	echo "origin is empty";
