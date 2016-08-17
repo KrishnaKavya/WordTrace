@@ -3,28 +3,40 @@
 The sessions contains the userID. A unique Table is created in the database with the login information ( Example: KrishnaWordTrace.)
 -->
 <?php
-require_once('mysqli_connect.php'); 	//Including the 
-session_start();
-$user_login="Krishna";
-$_SESSION['user_login']= $user_login;
-$table_name=$user_login."_WordTrace";
-$_SESSION['table_name']=$table_name;
+require_once('mysqli_connect.php'); 	//Including the database connection and establishing connection to the database. 
+session_start();						//Session start.
+$user_login="Krishna";						
+$_SESSION['user_login']= $user_login;	//Adding user login id to the session variables
+$table_name=$user_login."_WordTrace";	//The table name of the word trace of the user. 
+$_SESSION['table_name']=$table_name;	/*Adding the table name to the session variable. This session variable is used while storing the information 											to the database */
 $databaseName="wordtrace";
 	
 
-	//checking if the Table exits. 
-	$checktable= "SHOW TABLES FROM `$databaseName` LIKE '$table_name'"; //zero rows = not exist
+	/*
+		Creation of the table
+		Every user has a unique table in the database which stores the information. The activity of the user should be saved and stored
+		and should be available when the user logs in back. To acheive this, 
+		1. Check if the table already exists in the database. 
+		2. If the table already exists, The data is accessed from the existing table.
+		3. In the other case, A unique table is created for the user.
+	*/
+	/*
+		checktable query returns 0/1.
+		0- The table does not exist.
+		1- The table exists.  
+	*/
+	$checktable= "SHOW TABLES FROM `$databaseName` LIKE '$table_name'"; 
 	$result =@mysqli_query($dbc, $checktable);
 	$num_rows =@mysqli_num_rows($result);
-	
+	/*
+		The table creation is executed when the query returns false. 
+	*/
 	if(!$num_rows){
-	//Creation of the Table 
-	 $createTable="CREATE TABLE `wordtrace`.`$table_name` ( `Tile_ID` INT NOT NULL , `Text_File` VARCHAR(1000) NULL , `Image` VARCHAR(30) NULL , `Video` VARCHAR(30) NULL , `Audio` VARCHAR(30) NULL , PRIMARY KEY (`Tile_ID`));";
+	//query to create table
+	 $createTable="CREATE TABLE `wordtrace`.`$table_name` ( `word` VARCHAR(50) NOT NULL , `Origin` VARCHAR(1000) NULL , `past` VARCHAR(1000) NULL , `present` VARCHAR(1000) NULL , `associations` VARCHAR(1000) NULL , `connections` VARCHAR(1000) NULL , PRIMARY KEY (`word`));";
 
-		 $createPoemSquare = @mysqli_query($dbc, $createTable);
-		 if($createPoemSquare){
-		 	echo "new table created";
-		 }
+	 @mysqli_query($dbc, $createTable);	//create table.
+		 
 	}
 	
 
