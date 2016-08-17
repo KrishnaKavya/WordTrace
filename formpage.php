@@ -10,8 +10,6 @@
 	
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -33,7 +31,7 @@
 	
 </div>
 
-<form method="POST">
+<form method="POST" >
 <!--Form-->
 <div class="row">
 <!--Change to a, b,c and add an inner bullet for Origins-->
@@ -49,7 +47,7 @@
 
 		<li>Past
 			<div id="Past_wrap">
-			<input type="text" name="Past[]" class="input">
+			<input type="text" name="past[]" class="input">
 			<button class="add_field_button" id="Add_Past"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
 			</div>
 		</li>	
@@ -58,7 +56,7 @@
 
 		<li>Present
 			<div id="Present_wrap">
-			<input type="text" name="Present[]" class="input"> 
+			<input type="text" name="present[]" class="input"> 
 			<button class="add_field_button" id="Add_Present"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
 			</div>
 		</li> 
@@ -66,13 +64,13 @@
 </li>
 <li>Associations
 	<div id="Associations_wrap">
-	<input type="text" name="Associations[]" class="input">
+	<input type="text" name="associations[]" class="input">
 	<button class="add_field_button" id="Add_Associations"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
 	</div>
 </li>	
 <li>Connections 
 	<div id="Connections_wrap">
-	<input type="text" name="Connections[]" class="input">
+	<input type="text" name="connections[]" class="input">
 	<button class="add_field_button" id="Add_Connections"><img src="images/addIcon.jpeg" height="20px" width="20px"></button>
 	</div>
 </li>
@@ -83,10 +81,17 @@
 </div>
 </div>
 </form>
-<?php
 
-if(isset($_POST['Done'])){
-	echo $_POST["origins"][0]; 
+<?php
+if(isset($_POST["Done"])){
+    $origins = implode(", ", $_POST["origins"]);
+ 	echo $_POST["past"];
+
+    if(strlen($origins)==0){
+    	echo "origin is empty";
+    }else{
+    	echo $origins;
+    }
 }
 ?>
 </div>

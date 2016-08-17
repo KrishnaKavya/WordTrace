@@ -1,0 +1,4 @@
+/*
+	Creation of the database before executing the project. 
+*/
+create database wordtrace;
