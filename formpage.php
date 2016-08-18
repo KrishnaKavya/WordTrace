@@ -121,8 +121,10 @@ if(isset($_POST["Done"])){
 	The Insert Query takes the word and the input values as parameters. The table name is fetched from the . The query is executed to insert in the database. 
  	*/
 
- 	$insertquery= "INSERT INTO `$tablename` (`word`, `Origin`, `past`, `present`, `associations`, `connections`) VALUES ('black', '$origins', '$past', '$present', '$associations', '$connections');";
+ 	$insertquery= "INSERT INTO `$tablename` (`word`, `Origin`, `past`, `present`, `associations`, `connections`) VALUES ('green', '$origins', '$past', '$present', '$associations', '$connections');";
  	$insertresult =@mysqli_query($dbc, $insertquery);
+ 	$SelectQuery="Select * from wordtrace";
+	
 }
 ?>
 </div>
