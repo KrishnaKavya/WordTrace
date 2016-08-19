@@ -8,7 +8,7 @@ session_start();						//Session start.
 $user_login="krishna";						
 $_SESSION['user_login']= $user_login;	//Adding user login id to the session variables
 $table_name=$user_login."_wordtrace";	//The table name of the word trace of the user. 
-$_SESSION['table_name']=$table_name;	/*Adding the table name to the session variable. This session variable is used while storing the information 											to the database */
+$_SESSION['table_name']="krishna_wordtrace";	/*Adding the table name to the session variable. This session variable is used while storing the information 											to the database */
 $databaseName="wordtrace";
 	
 

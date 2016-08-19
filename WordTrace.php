@@ -5,13 +5,22 @@ $tablename=$_SESSION['table_name'];		// The table name is fetched from the sessi
 //word should be changed.
 $word="black";
 
-$selectQuery="SELECT * from krishna_wordtrace";
+$selectQuery="SELECT * from $tablename where word='$word'";
 $result=@mysqli_query($dbc, $selectQuery);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-    	$origin=$row["Origin"];
-    	echo $origin;
+    	
+    	$origin=explode(",",$row["Origin"]);
+    	$past=explode(",",$row["past"]);
+    	$present=explode(",",$row["present"]);
+    	$associations=explode(",",$row["associations"]);
+    	$connections=explode(",",$row["connections"]);
+
+    	echo $origin[0]. "<br/>". $origin[1];
+    	
+
+//    	echo $origin.$past.$present.$associations.$connections;
     }
 }
 
