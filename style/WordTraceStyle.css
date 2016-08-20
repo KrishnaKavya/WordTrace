@@ -1,25 +1,4 @@
-.container-fluid{
-	
-}
+.container-fluid, .row{
 
-
-.title{
-text-align: center;
-font-weight: bold;
-font-size: 36pt;
-background-color: #ADD8E6;
-padding: 15px;
-height: 80px;
-}
-
-.row{
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 20px;
-}
-
-.Instructions{
-	padding-top: 15px;
-	font-size: 11pt;
-	padding-bottom: 20px;
+	border: solid 2px;
 }

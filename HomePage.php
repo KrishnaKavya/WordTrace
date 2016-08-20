@@ -61,7 +61,7 @@ $databaseName="wordtrace";
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!--CSS Style Sheet-->
-	<link rel="stylesheet" type="text/css" href="style/WordTraceStyle.css">
+	<link rel="stylesheet" type="text/css" href="style/HomePageStyle.css">
 
 	<!--script file-->
 	<script src="js/script.js"></script>

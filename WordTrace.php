@@ -18,10 +18,55 @@ if ($result->num_rows > 0) {
     	$connections=explode(",",$row["connections"]);
 
     	echo $origin[0]. "<br/>". $origin[1];
-    	
 
 //    	echo $origin.$past.$present.$associations.$connections;
     }
 }
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word Trace</title>
+
+	<!--Jquery Library-->
+	<script src="https://code.jquery.com/jquery-1.10.2.js">
+	</script>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+	</script>
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">	
+	</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<!--Main container-->
+<div class="container-fluid">
+
+<div class="row">
+
+
+</div>
+
+<div class="row">
+
+
+</div>
+
+<div class="row">
+
+
+</div>
+
+</div>
+
+</body>
+</html>
