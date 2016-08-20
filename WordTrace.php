@@ -17,7 +17,6 @@ if ($result->num_rows > 0) {
     	$associations=explode(",",$row["associations"]);
     	$connections=explode(",",$row["connections"]);
 
-    	echo $origin[0]. "<br/>". $origin[1];
 
 //    	echo $origin.$past.$present.$associations.$connections;
     }
@@ -56,45 +55,54 @@ if ($result->num_rows > 0) {
 <!--Row One-->
 <div class="row">
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>hi</h1>
 </div>
 
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>hi</h1>
+<h1>
+<?php echo $origin[0]?>
+</h1>
 </div>
 
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>hi</h1>
+<h1>
+<?php echo $connections[0] ?>
+</h1>
 </div>
 </div>
 
 <!--Row two-->
 <div class="row">
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>hello</h1>
+<h1>
+<?php echo $past[0]?>
+</h1>
 </div>
 
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>hello</h1>
+<h1>
+<?php echo $word?>
+</h1>
 </div>
 
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>hello</h1>
 </div>
 </div>
 
 <!--Row 3-->
 <div class="row">
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>how Are you</h1>
+<h1>
+<?php echo $present[0]?>
+</h1>
 </div>
 
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>how Are you</h1>
 </div>
 
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>how Are you</h1>
+<h1>
+<?php $associations[0]?>
+</h1>
 </div>
 </div>
 </div>
