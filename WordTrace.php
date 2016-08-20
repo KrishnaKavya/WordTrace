@@ -45,25 +45,58 @@ if ($result->num_rows > 0) {
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" type="text/css" href="style/WordTraceStyle.css">
 </head>
 <body>
 
 <!--Main container-->
 <div class="container-fluid">
 
+<div  class="col-sm-4 col-md-4 col-lg-4">
+<!--Row One-->
 <div class="row">
-
-
+<div  class="col-sm-4 col-md-4 col-lg-4">
+<h1>hi</h1>
 </div>
 
-<div class="row">
-
-
+<div  class="col-sm-4 col-md-4 col-lg-4">
+<h1>hi</h1>
 </div>
 
+<div  class="col-sm-4 col-md-4 col-lg-4">
+<h1>hi</h1>
+</div>
+</div>
+
+<!--Row two-->
 <div class="row">
+<div  class="col-sm-4 col-md-4 col-lg-4">
+<h1>hello</h1>
+</div>
 
+<div  class="col-sm-4 col-md-4 col-lg-4">
+<h1>hello</h1>
+</div>
 
+<div  class="col-sm-4 col-md-4 col-lg-4">
+<h1>hello</h1>
+</div>
+</div>
+
+<!--Row 3-->
+<div class="row">
+<div  class="col-sm-4 col-md-4 col-lg-4">
+<h1>how Are you</h1>
+</div>
+
+<div  class="col-sm-4 col-md-4 col-lg-4">
+<h1>how Are you</h1>
+</div>
+
+<div  class="col-sm-4 col-md-4 col-lg-4">
+<h1>how Are you</h1>
+</div>
+</div>
 </div>
 
 </div>
