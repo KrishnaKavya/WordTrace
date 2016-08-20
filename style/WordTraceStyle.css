@@ -1,4 +1,17 @@
-div{
+.origin{
+color: pink;
+}
+.present{
+	color: red;
 
-	
+}
+.past{
+	color: 	orange;
+
+}
+.associations{
+	color: blue;
+}
+.connections{
+	color: green;
 }

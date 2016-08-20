@@ -58,28 +58,41 @@ if ($result->num_rows > 0) {
 </div>
 
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>
-<?php echo $origin[0]?>
-</h1>
+<h2 class="origin">
+<?php 
+	foreach ($origin as $value) {
+		echo $value;
+	}
+?>
+</h2>
 </div>
 
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>
-<?php echo $connections[0] ?>
-</h1>
+<h2 class="connections">
+<?php 
+	foreach ($connections as $value) {
+		echo $value;
+	}
+
+?>
+</h2>
 </div>
 </div>
 
 <!--Row two-->
 <div class="row">
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>
-<?php echo $past[0]?>
-</h1>
+<h2 class="past">
+<?php 
+	foreach ($past as $value) {
+		echo $value;
+	}
+?>
+</h2>
 </div>
 
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>
+<h1 class="Word">
 <?php echo $word?>
 </h1>
 </div>
@@ -91,18 +104,28 @@ if ($result->num_rows > 0) {
 <!--Row 3-->
 <div class="row">
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>
-<?php echo $present[0]?>
-</h1>
+<h2 class="present">
+<?php
+foreach ($present as $value) {
+		echo $value;
+	}
+?>
+</h2>
 </div>
 
 <div  class="col-sm-4 col-md-4 col-lg-4">
 </div>
 
 <div  class="col-sm-4 col-md-4 col-lg-4">
-<h1>
-<?php $associations[0]?>
-</h1>
+<h2 class="associations">
+<?php 
+
+foreach ($associations as $value) {
+		echo $value;
+	}
+
+?>
+</h2>
 </div>
 </div>
 </div>
