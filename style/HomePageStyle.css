@@ -2,6 +2,9 @@
 	
 }
 
+form{
+	display: inline;
+}
 
 .title{
 text-align: center;

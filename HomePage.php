@@ -77,7 +77,8 @@ $databaseName="wordtrace";
 <div class="row">
 
 <p class="Instructions">
-<b>Instructions:</b>  Identify words you find confusing or interesting.  Select one of the words and left click on it.  Read the dictionary entries.  Fill out the form.  (See &quot; WordTrace&quot; in &quot;Resources&quot; for additional information on how to do this.)  Return to the poem and hover over the word to see the &quot; WordTrace &quot; you have created.  Follow the same procedure with other words.  In addition to difficult words, choose some familiar words to explore more deeply.  Document your work in your log and save screenshots of your results.</p>
+<b>Instructions:</b>  Identify words you find confusing or interesting.  Select one of the words and left click on it.  Read the dictionary entries.  Fill out the form.  (See &quot; WordTrace&quot; in &quot;Resources&quot; for additional information on how to do this.)  Return to the poem and hover over the word to see the &quot; WordTrace &quot; you have created.  Follow the same procedure with other words.  In addition to difficult words, choose some familiar words to explore more deeply.  Document your work in your log and save screenshots of your results.
+</p>
 </div>
 <!--Row 2-->
 <div class="row">
@@ -85,7 +86,7 @@ $databaseName="wordtrace";
 <div class="col-sm-6 col-md-6 col-lg-6" >
 <p id="poem">
 
-<span onmouseenter="">Black</span> A, <span>white</span> E, <span>red</span> I, <span>green</span> U, <span>blue</span> O - <span>vowels</span>,<br>		
+<form method="POST"><span><input type="submit" value="Black" name="black" /></span></form> A, <span>white</span> E, <span>red</span> I, <span>green</span> U, <span>blue</span> O - <span>vowels</span>,<br>		
 <span>Some</span> <span>day</span> I will <span>open</span> your <span>silent</span> <span>pregnancies</span>:<br>
 A, <span>black</span> <span>belt</span>, <span>hairy</span> with <span>burst</span> <span>flies</span>,<br>
 <span>Bumbling</span> and <span>buzzing</span> <span>over</span> <span>stinking</span> <span>cruelties</span>,<br>
@@ -114,8 +115,6 @@ O&#46;&#46;&#46;Omega&#46;&#46;&#46;the violet light of His Eyes!<br>
 </div>
 <div class="row">
 </div>
-	
-
 <!--Second column end-->
 </div>
 <!--Second row end-->
@@ -124,5 +123,14 @@ O&#46;&#46;&#46;Omega&#46;&#46;&#46;the violet light of His Eyes!<br>
 </div>
 
 
+<?php
+if(isset($_POST['black'])){
+	runfunction();
+}
+
+function runfunction(){
+	echo "<script> alert('works');</script>";
+}
+?>
 </body>
 </html>
