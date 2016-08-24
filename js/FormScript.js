@@ -5,7 +5,9 @@ $(document).ready(function() {
       //  });
 
         $(function(){
-          //  $('#siteloader').html('<object id="webloader" data="http://www.thefreedictionary.com/black"/>');
+            var fetch=$('#word').val();
+            alert(fetch);
+            $('#siteloader').html("<object id='webloader' data='http://www.thefreedictionary.com/"+fetch+"'/>");
         });
 
     //Input Fields Start

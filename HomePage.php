@@ -81,12 +81,12 @@ $databaseName="wordtrace";
 </p>
 </div>
 <!--Row 2-->
-<div class="row">
+<div class="row" >
 <!--First Column-->
-<div class="col-sm-6 col-md-6 col-lg-6" >
+<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" >
 <p id="poem">
 
-<form method="POST"><span><input type="submit" value="Black" name="black" /></span></form> A, <span>white</span> E, <span>red</span> I, <span>green</span> U, <span>blue</span> O - <span>vowels</span>,<br>		
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=black'" value="Black" name="black" /></span> A, <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=white'" value="white" name="white"/></span> E, <span>red</span> I, <span>green</span> U, <span>blue</span> O - <span>vowels</span>,<br>		
 <span>Some</span> <span>day</span> I will <span>open</span> your <span>silent</span> <span>pregnancies</span>:<br>
 A, <span>black</span> <span>belt</span>, <span>hairy</span> with <span>burst</span> <span>flies</span>,<br>
 <span>Bumbling</span> and <span>buzzing</span> <span>over</span> <span>stinking</span> <span>cruelties</span>,<br>
@@ -109,12 +109,11 @@ O&#46;&#46;&#46;Omega&#46;&#46;&#46;the violet light of His Eyes!<br>
 </div>
 
 <!--Second column-->
-<div class="col-sm-6 col-md-6 col-lg-6" id="Phase Box" >
+<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7"  id="phaseContainer" style="border:solid 2px; height:800px">
 <!---->	
-<div class="row" >
-</div>
-<div class="row">
-</div>
+<iframe src="" name="phaseBox" id="phaseBox" style="border:solid 2px;" width="100%" height="100%">
+	
+</iframe>
 <!--Second column end-->
 </div>
 <!--Second row end-->

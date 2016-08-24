@@ -2,7 +2,19 @@
 require_once('mysqli_connect.php'); 	//Including the database connection and establishing connection to the database. 
 session_start();						//Session start.
 $tablename=$_SESSION['table_name'];		// The table name is fetched from the session variables 
+$word=$_REQUEST['word'];
+echo $word;
+
+$selectQuery="SELECT * from $tablename where word='$word'";
+$result=@mysqli_query($dbc, $selectQuery);
+if ($result->num_rows > 0) {
+
+	header("Location: http://localhost:1234/WordTrace/WordTrace.php?word=$word");
+}
+
+
 ?>
+<input type="hidden" id="word" value="<?php echo $word; ?>">
 <!DOCTYPE html>
 <html>
 <head>
@@ -105,13 +117,17 @@ b. Associations and Connections.
 </div>
 </form>
 
+
+
 <?php
+
 //The isset is set to true on click of submit button. 
 if(isset($_POST["Done"])){
 	/*
 	The implode function converts the array variable to string seperated by ",". All the input fields in the form are converted to strings. 
 	The string is assigned to php variables.  
 	*/
+	
     $origins = implode(", ", $_POST["origins"]);
  	$past = implode(", ", $_POST["past"]);
  	$present=implode(",", $_POST["present"]);
@@ -121,12 +137,14 @@ if(isset($_POST["Done"])){
 	The Insert Query takes the word and the input values as parameters. The table name is fetched from the . The query is executed to insert in the database. 
  	*/
 
- 	$insertquery= "INSERT INTO `$tablename` (`word`, `Origin`, `past`, `present`, `associations`, `connections`) VALUES ('green', '$origins', '$past', '$present', '$associations', '$connections');";
+ 	$insertquery= "INSERT INTO `$tablename` (`word`, `Origin`, `past`, `present`, `associations`, `connections`) VALUES ('$word', '$origins', '$past', '$present', '$associations', '$connections');";
  	$insertresult =@mysqli_query($dbc, $insertquery);
- 	$SelectQuery="Select * from wordtrace";
-	
+ 	$SelectQuery="Select * from wordtrace";	
+	echo "<script type='text/javascript'> window.location.replace('http://localhost:1234/WordTrace/display.php'); </script>";
+
 }
 ?>
+
 </div>
 </div>
 
