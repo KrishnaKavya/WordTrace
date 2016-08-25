@@ -50,13 +50,13 @@ if ($result->num_rows > 0) {
 <body>
 
 <!--Main container-->
-<div class="container">
+<div class="container-fluid">
 
-<div  class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div  class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 <!--Row One-->
 <div class="row">
 
-<div  class="col-xs-6 ol-sm-6 col-md-6 col-lg-6">
+<div  class="col-xs-7 ol-sm-7 col-md-6 col-lg-7">
 <h2 class="origin">
 <?php 
 	foreach ($origin as $value) {
@@ -68,7 +68,7 @@ if ($result->num_rows > 0) {
 </h2>
 </div>
 
-<div  class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+<div  class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 <h2 class="connections">
 <?php 
 	foreach ($connections as $value) {

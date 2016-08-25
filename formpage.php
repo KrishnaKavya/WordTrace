@@ -46,10 +46,10 @@ if ($result->num_rows > 0) {
 </head>
 <body>
 <!--Main Div-->
-<div class="container-fluid">
+<div class="container">
 <div>
 <!--Free Dictionary link-->
-<div id="siteloader" class="row">
+<div id="siteloader" class="row" >
 </div>
 <!--
 From Start. 
@@ -64,6 +64,7 @@ b. Associations and Connections.
 <!--Form-->
 <div class="row">
 <!--Change to a, b,c and add an inner bullet for Origins-->
+<br><br>
 <ol type="a">
 <li>Definitions
 	<ul>

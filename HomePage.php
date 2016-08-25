@@ -74,9 +74,9 @@ O&#46;&#46;&#46;Omega&#46;&#46;&#46;the violet light of His Eyes!<br>
 </div>
 
 <!--Second column-->
-<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7"  id="phaseContainer" style="border:solid 2px; height:800px">
+<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7"  id="phaseContainer" style="height:800px">
 <!---->	
-<iframe src="" name="phaseBox" id="phaseBox" style="border:solid 2px;" width="100%" height="100%">
+<iframe src="" name="phaseBox" id="phaseBox" width="150%" height="100%" frameborder="0">
 	
 </iframe>
 <!--Second column end-->
