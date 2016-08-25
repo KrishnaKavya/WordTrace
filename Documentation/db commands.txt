@@ -2,3 +2,9 @@
 	Creation of the database before executing the project. 
 */
 create database wordtrace;
+
+/*
+ creation of table structure. 
+*/
+
+CREATE TABLE `wordtrace`.`wordtrace` ( `word` VARCHAR(50) NOT NULL , `username` VARCHAR(50) NOT NULL , `origin` VARCHAR(1000) NOT NULL , `past` VARCHAR(1000) NOT NULL , `present` VARCHAR(1000) NOT NULL , `connections` VARCHAR(1000) NOT NULL , `associations` VARCHAR(1000) NOT NULL , PRIMARY KEY (`word`, `username`)) ENGINE = InnoDB;
