@@ -12,13 +12,12 @@ button{
 	background:white;
 }
 
-#siteloader{
-	width:  300px;
-	height: 500px;
-	border:solid 2px;
+#siteloader,#webloader{
+	width:  500px;
+	height: 250px;
 }
 .submit{
-	margin-left: 40px;
+	margin-left: 100px;
 	padding-left: 30px;
 	padding-right: 30px;
 }
