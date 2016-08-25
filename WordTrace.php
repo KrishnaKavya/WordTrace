@@ -1,17 +1,18 @@
 <?php
 require_once('mysqli_connect.php'); 	//Including the database connection and establishing connection to the database. 
 session_start();						//Session start.
-$tablename=$_SESSION['table_name'];		// The table name is fetched from the session variables 
+$tablename="wordtrace";		// The table name is fetched from the session variables 
 //word should be changed.
 $word=$_REQUEST['word'];
+$username=$_SESSION['user_login'];
 
-$selectQuery="SELECT * from $tablename where word='$word'";
+$selectQuery="SELECT * from $tablename where word='$word' and username='$username'";
 $result=@mysqli_query($dbc, $selectQuery);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
     	
-    	$origin=explode(",",$row["Origin"]);
+    	$origin=explode(",",$row["origin"]);
     	$past=explode(",",$row["past"]);
     	$present=explode(",",$row["present"]);
     	$associations=explode(",",$row["associations"]);
@@ -127,7 +128,6 @@ foreach ($present as $value) {
 <?php 
 
 foreach ($associations as $value) {
-		echo "<script>alert('word');</script>";
 		echo $value;
 		?> <br>
 		<?php

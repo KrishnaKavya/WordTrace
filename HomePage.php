@@ -1,45 +1,10 @@
 <!--Session variables-->
-<!--
-The sessions contains the userID. A unique Table is created in the database with the login information ( Example: KrishnaWordTrace.)
--->
+
 <?php
 require_once('mysqli_connect.php'); 	//Including the database connection and establishing connection to the database. 
 session_start();						//Session start.
-$user_login="krishna";						
+$user_login="grifee";						
 $_SESSION['user_login']= $user_login;	//Adding user login id to the session variables
-$table_name=$user_login."_wordtrace";	//The table name of the word trace of the user. 
-$_SESSION['table_name']="krishna_wordtrace";	/*Adding the table name to the session variable. This session variable is used while storing the information 											to the database */
-$databaseName="wordtrace";
-	
-
-	/*
-		Creation of the table
-		Every user has a unique table in the database which stores the information. The activity of the user should be saved and stored
-		and should be available when the user logs in back. To acheive this, 
-		1. Check if the table already exists in the database. 
-		2. If the table already exists, The data is accessed from the existing table.
-		3. In the other case, A unique table is created for the user.
-	*/
-	/*
-		checktable query returns 0/1.
-		0- The table does not exist.
-		1- The table exists.  
-	*/
-	$checktable= "SHOW TABLES FROM `$databaseName` LIKE '$table_name'"; 
-	$result =@mysqli_query($dbc, $checktable);
-	$num_rows =@mysqli_num_rows($result);
-	/*
-		The table creation is executed when the query returns false. 
-	*/
-	if(!$num_rows){
-	//query to create table
-	 $createTable="CREATE TABLE `wordtrace`.`$table_name` ( `word` VARCHAR(50) NOT NULL , `Origin` VARCHAR(1000) NULL , `past` VARCHAR(1000) NULL , `present` VARCHAR(1000) NULL , `associations` VARCHAR(1000) NULL , `connections` VARCHAR(1000) NULL , PRIMARY KEY (`word`));";
-
-	 @mysqli_query($dbc, $createTable);	//create table.
-		 
-	}
-	
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -120,16 +85,5 @@ O&#46;&#46;&#46;Omega&#46;&#46;&#46;the violet light of His Eyes!<br>
 </div>
 <!--Container End-->
 </div>
-
-
-<?php
-if(isset($_POST['black'])){
-	runfunction();
-}
-
-function runfunction(){
-	echo "<script> alert('works');</script>";
-}
-?>
 </body>
 </html>

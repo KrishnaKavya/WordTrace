@@ -1,12 +1,7 @@
 $(document).ready(function() {
 
-
-    //$( "#siteloader" ).load( "testing.html", function() {
-      //  });
-
         $(function(){
             var fetch=$('#word').val();
-            alert(fetch);
             $('#siteloader').html("<object id='webloader' data='http://www.thefreedictionary.com/"+fetch+"'/>");
         });
 

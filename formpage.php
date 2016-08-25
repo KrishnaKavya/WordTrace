@@ -1,11 +1,12 @@
 <?php
 require_once('mysqli_connect.php'); 	//Including the database connection and establishing connection to the database. 
 session_start();						//Session start.
-$tablename=$_SESSION['table_name'];		// The table name is fetched from the session variables 
+$tablename="wordtrace";		// The table name is fetched from the session variables 
 $word=$_REQUEST['word'];
-echo $word;
+$username=$_SESSION['user_login'];
 
-$selectQuery="SELECT * from $tablename where word='$word'";
+
+$selectQuery="SELECT * from $tablename where word='$word' and username='$username'";
 $result=@mysqli_query($dbc, $selectQuery);
 if ($result->num_rows > 0) {
 
@@ -137,7 +138,7 @@ if(isset($_POST["Done"])){
 	The Insert Query takes the word and the input values as parameters. The table name is fetched from the . The query is executed to insert in the database. 
  	*/
 
- 	$insertquery= "INSERT INTO `$tablename` (`word`, `Origin`, `past`, `present`, `associations`, `connections`) VALUES ('$word', '$origins', '$past', '$present', '$associations', '$connections');";
+ 	$insertquery= "INSERT INTO `$tablename` (`word`,`username`, `Origin`, `past`, `present`, `associations`, `connections`) VALUES ('$word','$username', '$origins', '$past', '$present', '$associations', '$connections');";
  	$insertresult =@mysqli_query($dbc, $insertquery);
  	$SelectQuery="Select * from wordtrace";	
 	echo "<script type='text/javascript'> window.location.replace('http://localhost:1234/WordTrace/display.php'); </script>";
