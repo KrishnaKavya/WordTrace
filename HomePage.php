@@ -48,33 +48,107 @@ $_SESSION['user_login']= $user_login;	//Adding user login id to the session vari
 <!--Row 2-->
 <div class="row" >
 <!--First Column-->
-<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" >
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
 <p id="poem">
 
-<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=black'" id="black" value="Black" name="black" class="word"/></span> A, <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=white'" value="white" name="white" class="word" /></span> E, <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=red'" value="red" name="red" class="word"/></span> I, <span>green</span> U, <span>blue</span> O - <span>vowels</span>,<br>		
-<span>Some</span> <span>day</span> I will <span>open</span> your <span>silent</span> <span>pregnancies</span>:<br>
-A, <span>black</span> <span>belt</span>, <span>hairy</span> with <span>burst</span> <span>flies</span>,<br>
-<span>Bumbling</span> and <span>buzzing</span> <span>over</span> <span>stinking</span> <span>cruelties</span>,<br>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=black'" id="black" value="Black" name="black" class="word"/></span> A, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=white'" value="white" name="white" class="word" /></span> E, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=red'" value="red" name="red" class="word"/></span> I, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=green'" value="green" name="green" class="word"/></span> U, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=blue'" value="blue" name="blue" class="word"/></span> O - 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=vowels'" value="vowels" name="vowels" class="word"/></span>,<br>		
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=some'" value="Some" name="some" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=day'" value="day" name="day" class="word"/></span> I will 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=open'" value="open" name="open" class="word"/></span> 
+your 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=silent'" value="silent" name="silent" class="word"/></span>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=pregnancies'" value="pregnancies" name="pregnancies" class="word"/></span>:<br>
+&nbsp;&nbsp;A, 
+<span>black</span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=belt'" value="belt" name="belt" class="word"/></span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=hairy'" value="hairy" name="hairy" class="word"/></span> 
+with 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=burst'" value="burst" name="burst" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=flies'" value="flies" name="flies" class="word"/></span>,<br>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=Bumbling'" value="Bumbling" name="Bumbling" class="word"/></span> and 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=buzzing'" value="buzzing" name="buzzing" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=over'" value="over" name="over" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=stinking'" value="stinking" name="stinking" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=cruelties'" value="cruelties" name="cruelties" class="word"/></span>,<br>
 <br>
-<span>Pits</span> of <span>night</span>; E, <span>candour</span> of <span>sand</span> <span>pavilions</span>,<br>
-<span>High</span> <span>glacial</span> <span>spears</span>, <span>white</span> <span>kings</span>, <span>trembling</span> <span>Queen</span> <span>Anne's</span> <span>lace;</span><br>
-<span>I</span>, <span>bloody</span> <span>spittle</span>, <span>laughter</span> <span>dribbling</span> <span>from</span> <span>a</span> <span>face</span><br>
-<span>In</span> <span>wild</span> <span>denial</span> or in <span>anger</span>, <span>vermilions</span>;<br>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=Pits'" value="Pits" name="Pits" class="word"/></span> 
+of 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=night'" value="night" name="night" class="word"/></span>; 
+E, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=candour'" value="candour" name="candour" class="word"/></span> 
+of 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=sand'" value="sand" name="sand" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=pavilions'" value="pavilions" name="pavilions" class="word"/></span>
+,<br>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=High'" value="High" name="High" class="word"/></span>
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=glacial'" value="glacial" name="glacial" class="word"/></span> 
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=spears'" value="spears" name="spears" class="word"/></span>
+ , 
+ <span>white</span> 
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=kings'" value="kings" name="kings" class="word"/></span>, 
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=trembling'" value="trembling" name="trembling" class="word"/></span> 
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=Queen'" value="Queen" name="Queen" class="word"/></span> 
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=Anne" value="Anne's" name="Anne's" class="word"/></span> 
+ <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=lace'" value="lace" name="lace" class="word"/></span>;<br>
+&nbsp;&nbsp;<span>I</span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=bloody'" value="bloody" name="bloody" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=spittle'" value="spittle" name="spittle" class="word"/></span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=laughter'" value="laughter" name="laughter" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=dribbling'" value="dribbling" name="dribbling" class="word"/></span> 
+<span>from</span> <span>a</span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=face'" value="face" name="face" class="word"/></span><br>
+&nbsp;&nbsp;<span>In</span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=wild'" value="wild" name="wild" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=denial'" value="denial" name="denial" class="word"/></span> or in 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=anger'" value="anger" name="anger" class="word"/></span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=vermilions'" value="vermilions" name="vermilions" class="word"/></span>;<br>
 <br>
-U,&#46;&#46;&#46; <span>divine</span> <span>movement</span> of <span>viridian</span> <span>seas</span>,<br>
-<span>Peace</span> of <span>pastures</span> <span>animal-strewn</span>, <span>peace</span> of <span>calm</span> <span>lines</span><br>
-<span>Drawn</span> on <span>foreheads</span> <span>worn</span> with <span>heavy</span> <span>alchemies</span>;<br>
+&nbsp;&nbsp;U,&#46;&#46;&#46; 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=divine'" value="divine" name="divine" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=movement'" value="movement" name="movement" class="word"/></span> of 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=viridian'" value="viridian" name="viridian" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=seas'" value="seas" name="seas" class="word"/></span>,<br>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=Peace'" value="Peace" name="Peace" class="word"/></span> of 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=pastures'" value="pastures" name="pastures" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=animal-strewn'" value="animal-strewn" name="animal-strewn" class="word"/></span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=peace'" value="peace" name="peace" class="word"/></span> of 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=calm'" value="calm" name="calm" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=lines'" value="lines" name="lines" class="word"/></span><br>
+
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=Drawn'" value="Drawn" name="Drawn" class="word"/></span> on 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=foreheads'" value="foreheads" name="foreheads" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=worn'" value="worn" name="worn" class="word"/></span> with 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=heavy'" value="heavy" name="heavy" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=alchemies'" value="alchemies" name="alchemies" class="word"/></span>;<br>
 <br>
-O, <span>supreme</span> <span>Trumpet</span>, <span>harsh</span> with <span>strange</span> <span>stridencies</span>,<br>
-<span>Silences</span> <span>traced</span> in <span>angels</span> and <span>astral</span> <span>designs:</span><br>
-O&#46;&#46;&#46;<span>Omega</span>&#46;&#46;&#46;the <span>violet</span> <span>light</span> of His <span>Eyes!</span><br>
+&nbsp;&nbsp;O, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=supreme'" value="supreme" name="supreme" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=Trumpet'" value="Trumpet" name="Trumpet" class="word"/></span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=harsh'" value="harsh" name="harsh" class="word"/></span> with 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=strange'" value="strange" name="strange" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=stridencies'" value="stridencies" name="stridencies" class="word"/></span>,<br>
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=Silences'" value="Silences" name="Silences" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=traced'" value="traced" name="traced" class="word"/></span> in 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=angels'" value="angels" name="angels" class="word"/></span> and 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=astral'" value="astral" name="astral" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=designs'" value="designs" name="designs" class="word"/></span>:<br>
+&nbsp;&nbsp;O&#46;&#46;&#46;
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=Omega'" value="Omega" name="Omega" class="word"/></span>&#46;&#46;&#46;the 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=violet'" value="violet" name="violet" class="word"/></span> 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=light'" value="light" name="light" class="word"/></span> of His 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=Eyes'" value="Eyes" name="Eyes" class="word"/></span>!<br>
 
 </p>
 <!--End of first Column-->
 </div>
 
 <!--Second column-->
-<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7"  id="phaseContainer" style="height:800px">
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"  id="phaseContainer" style="height:800px">
 <!---->	
 <iframe src="" name="phaseBox" id="phaseBox" width="150%" height="100%" frameborder="0">
 	
