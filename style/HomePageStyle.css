@@ -24,3 +24,8 @@ height: 80px;
 	font-size: 11pt;
 	padding-bottom: 20px;
 }
+
+.word{
+	border: none;
+	background: none;
+}

@@ -51,23 +51,23 @@ $_SESSION['user_login']= $user_login;	//Adding user login id to the session vari
 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" >
 <p id="poem">
 
-<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=black'" value="Black" name="black" /></span> A, <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=white'" value="white" name="white"/></span> E, <span>red</span> I, <span>green</span> U, <span>blue</span> O - <span>vowels</span>,<br>		
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=black'" id="black" value="Black" name="black" class="word"/></span> A, <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=white'" value="white" name="white" class="word" /></span> E, <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=red'" value="red" name="red" class="word"/></span> I, <span>green</span> U, <span>blue</span> O - <span>vowels</span>,<br>		
 <span>Some</span> <span>day</span> I will <span>open</span> your <span>silent</span> <span>pregnancies</span>:<br>
 A, <span>black</span> <span>belt</span>, <span>hairy</span> with <span>burst</span> <span>flies</span>,<br>
 <span>Bumbling</span> and <span>buzzing</span> <span>over</span> <span>stinking</span> <span>cruelties</span>,<br>
 <br>
-Pits of night; E, candour of sand pavilions,<br>
-High glacial spears, white kings, trembling Queen Anne's lace;<br>
-I, bloody spittle, laughter dribbling from a face<br>
-In wild denial or in anger, vermilions;<br>
+<span>Pits</span> of <span>night</span>; E, <span>candour</span> of <span>sand</span> <span>pavilions</span>,<br>
+<span>High</span> <span>glacial</span> <span>spears</span>, <span>white</span> <span>kings</span>, <span>trembling</span> <span>Queen</span> <span>Anne's</span> <span>lace;</span><br>
+<span>I</span>, <span>bloody</span> <span>spittle</span>, <span>laughter</span> <span>dribbling</span> <span>from</span> <span>a</span> <span>face</span><br>
+<span>In</span> <span>wild</span> <span>denial</span> or in <span>anger</span>, <span>vermilions</span>;<br>
 <br>
-U,&#46;&#46;&#46; divine movement of viridian seas,<br>
-Peace of pastures animal-strewn, peace of calm lines<br>
-Drawn on foreheads worn with heavy alchemies;<br>
+U,&#46;&#46;&#46; <span>divine</span> <span>movement</span> of <span>viridian</span> <span>seas</span>,<br>
+<span>Peace</span> of <span>pastures</span> <span>animal-strewn</span>, <span>peace</span> of <span>calm</span> <span>lines</span><br>
+<span>Drawn</span> on <span>foreheads</span> <span>worn</span> with <span>heavy</span> <span>alchemies</span>;<br>
 <br>
-O, supreme Trumpet, harsh with strange stridencies,<br>
-Silences traced in angels and astral designs:<br>
-O&#46;&#46;&#46;Omega&#46;&#46;&#46;the violet light of His Eyes!<br>
+O, <span>supreme</span> <span>Trumpet</span>, <span>harsh</span> with <span>strange</span> <span>stridencies</span>,<br>
+<span>Silences</span> <span>traced</span> in <span>angels</span> and <span>astral</span> <span>designs:</span><br>
+O&#46;&#46;&#46;<span>Omega</span>&#46;&#46;&#46;the <span>violet</span> <span>light</span> of His <span>Eyes!</span><br>
 
 </p>
 <!--End of first Column-->

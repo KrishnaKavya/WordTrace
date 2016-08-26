@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
 	<script src="https://code.jquery.com/jquery-1.10.2.js">
 	</script>
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 	</script>
 	
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -66,7 +66,7 @@ b. Associations and Connections.
 <!--Change to a, b,c and add an inner bullet for Origins-->
 <br><br>
 <ol type="a">
-<li>Definitions
+<li><b>Definitions</b>
 	<ul>
 		<li>Origins
 			<div id="origins_wrap">			<!-- The Div for origins  The div acts as a wrap to the input fields and buttons -->
@@ -96,14 +96,14 @@ b. Associations and Connections.
 		</li> 
 	</ul>
 </li>
-<li>Associations
+<li><b>Associations</b>
 	<div id="Associations_wrap"> <!-- The Div for Associations. The div acts as a wrap to the input fields and buttons -->
 	<input type="text" name="associations[]" class="input"> <!--Input fields for associations. associations[] acts as an array variable-->
 	<button class="add_field_button" id="Add_Associations"><img src="images/addIcon.jpeg" height="20" width="20" alt="add button"></button>
 	<!--Button to add Input fields to the Origin.-->
 	</div>
 </li>	
-<li>Connections 
+<li><b>Connections </b>
 	<div id="Connections_wrap"> <!-- The Div for Connections. The div acts as a wrap to the input fields and buttons -->
 	<input type="text" name="connections[]" class="input"> <!--Input fields for connections. connections[] acts as an array variable-->
 	<button class="add_field_button" id="Add_Connections"><img src="images/addIcon.jpeg" height="20" width="20" alt="add button"></button>
