@@ -115,7 +115,7 @@ of
 <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=seas'" value="seas" name="seas" class="word"/></span>,<br>
 <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=Peace'" value="Peace" name="Peace" class="word"/></span> of 
 <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=pastures'" value="pastures" name="pastures" class="word"/></span> 
-<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=animal-strewn'" value="animal-strewn" name="animal-strewn" class="word"/></span>, 
+<span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=animal'" value="animal-strewn" name="animal-strewn" class="word"/></span>, 
 <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=peace'" value="peace" name="peace" class="word"/></span> of 
 <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=calm'" value="calm" name="calm" class="word"/></span> 
 <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=lines'" value="lines" name="lines" class="word"/></span><br>
