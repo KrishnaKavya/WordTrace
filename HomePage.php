@@ -3,7 +3,8 @@
 <?php
 require_once('mysqli_connect.php'); 	//Including the database connection and establishing connection to the database. 
 session_start();						//Session start.
-$user_login="grifee";						
+//Deployment Changes:get the email id.
+$user_login="grifee";					//user id. 
 $_SESSION['user_login']= $user_login;	//Adding user login id to the session variables
 ?>
 <!DOCTYPE html>
@@ -45,12 +46,20 @@ $_SESSION['user_login']= $user_login;	//Adding user login id to the session vari
 <b>Instructions:</b>  Identify words you find confusing or interesting.  Select one of the words and left click on it.  Read the dictionary entries.  Fill out the form.  (See &quot; WordTrace&quot; in &quot;Resources&quot; for additional information on how to do this.)  Return to the poem and hover over the word to see the &quot; WordTrace &quot; you have created.  Follow the same procedure with other words.  In addition to difficult words, choose some familiar words to explore more deeply.  Document your work in your log and save screenshots of your results.
 </p>
 </div>
+<!--End of Instructions-->
 <!--Row 2-->
 <div class="row" >
 <!--First Column-->
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
 <p id="poem">
+<!--
+- The words are of type buttons. The iframe is added in the second column of the div tag. 
+- The class of the words is designed as word. The Jquery method changes the background color to yellow on hovering on the word.
+name of the button is the word. 
+- on click of the words, the frame is loaded with the url appended by the word.
 
+- The same is performed to all the words. 
+-->
 <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=black'" id="black" value="Black" name="black" class="word"/></span> A, 
 <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=white'" value="white" name="white" class="word" /></span> E, 
 <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=red'" value="red" name="red" class="word"/></span> I, 
