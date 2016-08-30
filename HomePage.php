@@ -1,4 +1,23 @@
-<!--Session variables-->
+<!--
+The home page of word trace acts as the main page of the project. The Home page is based on div design and spaced using bootstrap grid layout. 
+The Page is divided into two segments. 
+- Title
+	* The title of the project is displayed in this block. 
+	* The instructions of the activity. 
+- content
+	* The content of the page is divided into two columns
+		-Poem 
+			* The poem is present in the left column of the content part. 
+			  Every word is a button defined with its redirection link , value, name and class.
+			  When hovered on each word the background is changed to yellow and when the mouse exits the word the background is white again.
+		-Phase Box
+			* The right column acts as an activity area for the user. External web pages are linked and loaded in this column.
+			  Criteria : Definition.
+			  1. When the user completes filling the form(Word Trace) of the page. The Word Trace is loaded.
+			  2. When the user does not complete filling the form(Word Trace of the word). The form page is loaded. 
+	
+
+-->
 
 <?php
 require_once('mysqli_connect.php'); 	//Including the database connection and establishing connection to the database. 
@@ -41,7 +60,7 @@ $_SESSION['user_login']= $user_login;	//Adding user login id to the session vari
 </header>
 <!--Instructions Row 1-->
 <div class="row">
-
+<!--Instructions for the activity-->
 <p class="Instructions">
 <b>Instructions:</b>  Identify words you find confusing or interesting.  Select one of the words and left click on it.  Read the dictionary entries.  Fill out the form.  (See &quot; WordTrace&quot; in &quot;Resources&quot; for additional information on how to do this.)  Return to the poem and hover over the word to see the &quot; WordTrace &quot; you have created.  Follow the same procedure with other words.  In addition to difficult words, choose some familiar words to explore more deeply.  Document your work in your log and save screenshots of your results.
 </p>
@@ -59,6 +78,8 @@ name of the button is the word.
 - on click of the words, the frame is loaded with the url appended by the word.
 
 - The same is performed to all the words. 
+
+-Deployment changes : src of all the buttons will be changed. 
 -->
 <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=black'" id="black" value="Black" name="black" class="word"/></span> A, 
 <span><input type="button" onclick="document.getElementById('phaseBox').src='http://localhost:1234/WordTrace/FormPage.php?word=white'" value="white" name="white" class="word" /></span> E, 
@@ -155,10 +176,15 @@ of
 </p>
 <!--End of first Column-->
 </div>
+<!--
+The iframe acts as a frame where the activity is loaded based on the on click function of the word. 
+1. Phase box
+2. Word trace 
+
+-->
 
 <!--Second column-->
-<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"  id="phaseContainer" style="height:800px">
-<!---->	
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"  id="phaseContainer" style="height:800px">	
 <iframe src="" name="phaseBox" id="phaseBox" width="150%" height="100%" frameborder="0">
 	
 </iframe>
