@@ -1,17 +1,13 @@
+<!-- display.php is used to display a message to the user once a user submits the form.-->
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title> Display page</title>
 </head>
-
-<style type="text/css">
-div{
-
-}
-</style>
 <body>
-<div class="col-xs-4 ol-sm-4 col-md-4 col-lg-4">
+<div>
 <br><br><br><br>
+<!--Message to be displayed-->
 <h1>Click on words to continue</h1>
 </div>
 </body>
