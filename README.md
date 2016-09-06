@@ -43,12 +43,12 @@ The user can click on any word in the poem to add their interpretations. Once, t
 
 8. Word Trace: 
 
-Once the pase box is completed, A word has interpretations of the user. When the user clicks on the word which he already completed the phase box.
-the selected word will appear first in black type in the center of the phase box; the terms added previously to the WordTrace form will spray out 
-like fireworks explosions from the selected word according to the categories designated on the form: Definitions, Associations, Connections. 
-The terms will move away from the center and come to rest in scattered positions away from the black center word but in close proximity to 
-other terms in the same category.  Present definitions will appear in red type; past definitions will appear in orange type; origins definitions 
-will appear in pink type; associations will appear in blue type; connections will appear in green type.  
+	Once the pase box is completed, A word has interpretations of the user. When the user clicks on the word which he already completed the phase box.
+	the selected word will appear first in black type in the center of the phase box; the terms added previously to the WordTrace form will spray out 
+	like fireworks explosions from the selected word according to the categories designated on the form: Definitions, Associations, Connections. 
+	The terms will move away from the center and come to rest in scattered positions away from the black center word but in close proximity to 
+	other terms in the same category.  Present definitions will appear in red type; past definitions will appear in orange type; origins definitions 
+	will appear in pink type; associations will appear in blue type; connections will appear in green type.  
 
 
 
