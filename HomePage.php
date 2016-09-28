@@ -23,7 +23,7 @@ The Page is divided into two segments.
 require_once('mysqli_connect.php'); 	//Including the database connection and establishing connection to the database. 
 session_start();						//Session start.
 //Deployment Changes:get the email id.
-$user_login="grifee";					//user id. 
+$user_login="krishna";					//user id. 
 $_SESSION['user_login']= $user_login;	//Adding user login id to the session variables
 ?>
 <!DOCTYPE html>
@@ -185,7 +185,7 @@ The iframe acts as a frame where the activity is loaded based on the on click fu
 
 <!--Second column-->
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"  id="phaseContainer" style="height:800px">	
-<iframe src="" name="phaseBox" id="phaseBox" width="150%" height="100%" frameborder="0">
+<iframe src="" name="phaseBox" id="phaseBox" width="150%" height="100%" frameborder="0" seamless="">
 	
 </iframe>
 <!--Second column end-->

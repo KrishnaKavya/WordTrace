@@ -28,4 +28,6 @@ height: 80px;
 .word{
 	border: none;
 	background: none;
+	padding-left: 0pt;
+	padding-right: 0pt;
 }
